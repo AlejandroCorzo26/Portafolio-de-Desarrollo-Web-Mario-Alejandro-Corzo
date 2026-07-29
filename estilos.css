@@ -12,8 +12,15 @@ body{
     font-family:Georgia, serif;
 
 }
+header{
+
+    position:relative;
+
+    z-index:10;
+
+}
 .narvcolor{
-    background:#151415;
+    background:#12121200;
 
 }
 .navbar{
@@ -61,12 +68,12 @@ body{
 }
 .menu a:hover{
 
-    color:#490064;
+    color:#c2c2c2;
 
 }
 .hero{
 
-    height:100vh; /*esto aplica toda la altura de la pantalla, es parte de las etiquetas que habia que investigar segun la clase del 28/07 */
+    height:98vh; /*esto aplica toda la altura de la pantalla, es parte de las etiquetas que habia que investigar segun la clase del 28/07 */
 
     display:flex;
 
@@ -110,7 +117,7 @@ body{
 
     color:#d0d0d0;
 
-    margin-bottom:55px;
+    margin-bottom:65px;
 
 }
 .botones{
@@ -153,4 +160,34 @@ body{
 
     transform:scale(1.05);
 
+}
+#tsparticles{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:-1;
+
+    background:#000;
+
+}
+#tsparticles{
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+}
+
+#mask{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.92);
+    z-index: -1;
+    pointer-events: none;
 }
