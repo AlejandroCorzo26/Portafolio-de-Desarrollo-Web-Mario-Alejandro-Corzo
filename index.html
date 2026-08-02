@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Alejandro Corzo Portafolio</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body class="home">
+    <div id="background"></div>
+    <div id="tsparticles"></div>
+    <div id="mask"></div>
+    <header>
+        <section class="narvcolor">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#hero" class="logo">Mario Alejandro Corzo</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="sobremi.html">Sobre mí</a></li>
+                    <li><a href="">Portafolio</a></li>
+                    <li><a href="#stack">Stack Tecnológico</a></li>
+                    <li><a href="educacion.html">Educación</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-contenido">
+                <h1>Mario Alejandro Corzo</h1>
+                <h2>
+                    Ingeniero en Sistemas de Información y Ciencias de la Computación
+                </h2>
+                <p>
+                    Soy estudiante de Ingeniería en Sistemas y apasionado por el desarrollo de
+                    soluciones tecnológicas que generan un impacto real. Me gusta analizar problemas, comprender las
+                    necesidades de cada proyecto y transformarlas en herramientas funcionales, eficientes y fáciles de
+                    utilizar. Este portafolio reúne algunos de mis proyectos, conocimientos y la forma en la que abordo
+                    cada desafío.
+                </p>
+                <div class="botones">
+                    <a href="#" class="btn btn-morado">
+                        Ver proyectos
+                    </a>
+                    <a href="sobremi.html#contact" class="btn btn-blanco">
+                        Conecta conmigo
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="stack" class="stack">
+            <div class="stack-header">
+                <span class="subtitle">Tecnologías</span>
+                <h2>STACK TECNOLÓGICO</h2>
+                <p>Las herramientas y tecnologías que utilizo para crear experiencias excepcionales.</p>
+            </div>
+            <div class="stack-grid">
+                <div class="stack-card">
+                    <h3>LENGUAJES</h3>
+                    <div class="tags">
+                        <span onclick="abrirModal('TypeScript')">TypeScript</span>
+                        <span onclick="abrirModal('JavaScript')">JavaScript</span>
+                        <span onclick="abrirModal('C++')">C++</span>
+                        <span onclick="abrirModal('C#')">C#</span>
+                        <span onclick="abrirModal('Python')">Python</span>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <h3>BASE DE DATOS</h3>
+                    <div class="tags">
+                        <span onclick="abrirModal('MySQL')">MySQL</span>
+                        <span onclick="abrirModal('SQL Server')">SQL Server</span>
+                        <span onclick="abrirModal('Oracle')">Oracle</span>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <h3>HERRAMIENTAS DE DESARROLLO</h3>
+
+                    <div class="tags">
+                        <span onclick="abrirModal('VS Code')">VS Code</span>
+                        <span onclick="abrirModal('Visual Studio')">Visual Studio</span>
+                        <span onclick="abrirModal('GitHub')">GitHub</span>
+                    </div>
+                </div>
+                <div class="stack-card">
+                    <h3>DESARROLLO DE SOFTWARE</h3>
+                    <div class="tags">
+                        <span onclick="abrirModal('CRUD')">CRUD</span>
+                        <span onclick="abrirModal('JSON')">Json</span>
+                        <span onclick="abrirModal('APIs')">APIS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="work" class="work">
+                <div class="work-header">
+                    <span class="subtitle">Valores</span>
+                    <h2>FORMA DE TRABAJAR</h2>
+                    <p>Los principios que guían mi trabajo y mi enfoque para cada proyecto</p>
+                </div>
+                <div class="work-grid">
+                    <div class="work-card">
+                        <div class="work-icon">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3>ANÁLISIS</h3>
+                        <p>Antes de escribir una sola línea de código, dedico tiempo a entender el problema. Analizar
+                            los procesos, identificar oportunidades de mejora y comprender las necesidades del usuario
+                            me permite desarrollar soluciones más completas y efectivas.</p>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                        <h3>SOLUCIONES</h3>
+                        <p>Cada proyecto representa un reto diferente. Mi enfoque consiste en diseñar soluciones
+                            funcionales, escalables y fáciles de mantener, priorizando siempre la calidad, la eficiencia
+                            y la experiencia del usuario.</p>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h3>COMUNICAIÓN</h3>
+                        <p>Considero que una buena comunicación es esencial para el éxito de cualquier proyecto.
+                            Mantener un intercambio claro de ideas, escuchar las necesidades del cliente y compartir
+                            avances constantemente permite obtener mejores resultados.</p>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>COMPROMISO</h3>
+                        <p>Me involucro en cada proyecto con responsabilidad y dedicación. Busco cumplir los objetivos
+                            establecidos, mantener una mejora continua y entregar soluciones que realmente aporten
+                            valor.</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="cerrar">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalDescripcion"></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script>
+        const titulo = document.getElementById("modalTitulo");
+        const descripcion = document.getElementById("modalDescripcion");
+        const modal = document.getElementById("modal");
+        const tecnologias = {
+            TypeScript: {
+                icono: "🔷",
+                descripcion: "Superset de JavaScript que añade tipado estático para desarrollar aplicaciones más robustas y mantenibles.",
+            },
+            Python: {
+                icono: "🐍",
+                descripcion: "Lenguaje versátil ideal para desarrollo web, análisis de datos, machine learning y automatización.",
+            },
+            JavaScript: {
+                icono: "🟨",
+                descripcion: "Lenguaje principal para el desarrollo web dinámico e interfaces interactivas.",
+            },
+            "C++": {
+                icono: "💻",
+                descripcion: "Lo utilizo para programación orientada a objetos y estructuras de datos.",
+            },
+            "C#": {
+                icono: "⚙️",
+                descripcion: "Desarrollo de aplicaciones de escritorio y proyectos con .NET.",
+            },
+            MySQL: {
+                icono: "🗄️",
+                descripcion: "Sistema de gestión de bases de datos relacional de código abierto que utiliza el lenguaje SQL y funciona mediante un modelo de cliente-servidor",
+            },
+            "SQL Server": {
+                icono: "🛢️",
+                descripcion: "Herramienta de administración integrada para configurar, monitorear y administrar bases de datos SQL Server.",
+            },
+            Oracle: {
+                icono: "🏛️",
+                descripcion: "Sistema de gestión de bases de datos relacionales y multimodelo, permite almacenar, organizar y procesar grandes volúmenes de información con alta seguridad, rendimiento y disponibilidad para aplicaciones empresariales.",
+            },
+            "VS Code": {
+                icono: "📝",
+                descripcion: "Editor de código avanzado con extensiones, depuración integrada y soporte para múltiples lenguajes.",
+            },
+            "Visual Studio": {
+                icono: "🟣",
+                descripcion: "Entorno de desarrollo integrado (IDE) utilizado para crear, depurar y compilar aplicaciones en múltiples lenguajes para diversas plataformas.",
+            },
+            GitHub: {
+                icono: "🐙",
+                descripcion: "Plataforma de desarrollo colaborativo con control de versiones Git y herramientas DevOps integradas.",
+            },
+            "CRUD": {
+                icono: "🔄",
+                descripcion: "Proporcionan las funciones que un sistema necesita para que sus usuarios puedan gestionar datos de manera controlada.",
+            },
+            JSON: {
+                icono: "📄",
+                descripcion: "Formato de texto plano que facilita el intercambio de datos entre diferentes lenguajes de programación.",
+            },
+            "APIs": {
+                icono: "🔗",
+                descripcion: "(interfaz de programación de aplicaciones) son los componentes fundamentales de la tecnología moderna y la infraestructura empresarial.",
+            },
+
+        };
+        function abrirModal(nombre) {
+            const tecnologia = tecnologias[nombre];
+            if (!tecnologia) return;
+            modal.style.display = "flex";
+            titulo.innerHTML = `${tecnologia.icono} ${nombre}`;
+            descripcion.innerHTML = `
+        <p>${tecnologia.descripcion}</p>
+    `;
+        }
+        document.querySelector(".cerrar").onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (e) {
+            if (e.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="https://github.com/AlejandroCorzo26" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mario-alejandro-corzo-peralta/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="footer-copy">
+                © 2026 Mario Alejandro Corzo. Todos los derechos reservados.
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:corzomario619@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+    </footer>
+</body>
+
+</html>
