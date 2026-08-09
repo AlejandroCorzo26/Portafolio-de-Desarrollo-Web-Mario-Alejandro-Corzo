@@ -98,3 +98,23 @@ document.addEventListener("mousemove",(e)=>{
         black 100%)`;
 
 });
+
+const principal=document.getElementById("imagenPrincipal");
+
+document.querySelectorAll(".miniaturas img").forEach(img=>{
+
+    img.addEventListener("mouseenter",()=>{
+
+        principal.style.opacity=0;
+
+        setTimeout(()=>{
+
+            principal.src=img.src;
+
+            principal.style.opacity=1;
+
+        },180);
+
+    });
+
+});
